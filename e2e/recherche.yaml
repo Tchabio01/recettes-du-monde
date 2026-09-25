@@ -1,0 +1,8 @@
+appId: com.recettesdumonde.app.dev
+---
+- launchApp
+- tapOn: "Recherche"
+- tapOn:
+    id: "Rechercher par ingrédient"
+- inputText: "tomate"
+- assertVisible: "Facile"

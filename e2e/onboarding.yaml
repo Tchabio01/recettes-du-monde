@@ -1,0 +1,9 @@
+appId: com.recettesdumonde.app.dev
+---
+- launchApp
+- assertVisible: "Recettes du Monde"
+- tapOn: "Commencer"
+- assertVisible: "Vos préférences alimentaires"
+- tapOn: "Végétarien"
+- tapOn: "Continuer"
+- assertVisible: "Accueil"

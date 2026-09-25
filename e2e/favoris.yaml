@@ -1,0 +1,11 @@
+appId: com.recettesdumonde.app.dev
+---
+- launchApp
+- tapOn: "Accueil"
+- scroll
+- tapOn:
+    text: "🤍"
+    index: 0
+- tapOn: "Favoris"
+- assertVisible:
+    text: "❤️"

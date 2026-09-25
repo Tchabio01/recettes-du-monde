@@ -1,0 +1,57 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "confirm": "Confirm"
+  },
+  "onboarding": {
+    "title": "Welcome to World Recipes",
+    "subtitle": "Select your dietary preferences",
+    "continue": "Continue",
+    "skip": "Skip"
+  },
+  "auth": {
+    "login": "Log in",
+    "signup": "Sign up",
+    "email": "Email",
+    "password": "Password",
+    "continueWithApple": "Continue with Apple",
+    "continueWithGoogle": "Continue with Google"
+  },
+  "home": {
+    "recipeOfTheDay": "Recipe of the day",
+    "popular": "Popular recipes"
+  },
+  "search": {
+    "placeholder": "Search by ingredient...",
+    "noResults": "No recipes found"
+  },
+  "recipe": {
+    "ingredients": "Ingredients",
+    "steps": "Steps",
+    "nutrition": "Nutrition facts",
+    "addToShoppingList": "Add to shopping list",
+    "premiumLocked": "Premium recipe",
+    "unlockWithAd": "Unlock with an ad",
+    "unlockWithPremium": "Go Premium"
+  },
+  "shoppingList": {
+    "title": "Shopping list",
+    "empty": "Your shopping list is empty",
+    "clearChecked": "Clear checked items"
+  },
+  "profile": {
+    "title": "Profile",
+    "settings": "Settings",
+    "darkMode": "Dark mode",
+    "language": "Language",
+    "removeAds": "Remove ads",
+    "premium": "Go Premium",
+    "logout": "Log out",
+    "deleteAccount": "Delete my account"
+  }
+}

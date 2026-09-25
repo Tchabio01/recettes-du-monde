@@ -1,0 +1,59 @@
+name: EAS Build & Submit
+
+on:
+  workflow_dispatch:
+    inputs:
+      profile:
+        description: "Profil EAS (development | preview | production)"
+        required: true
+        default: "preview"
+      platform:
+        description: "Plateforme (ios | android | all)"
+        required: true
+        default: "all"
+      submit:
+        description: "Soumettre aux stores après build"
+        type: boolean
+        default: false
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build:
+    name: EAS Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Setup EAS
+        uses: expo/expo-github-action@v8
+        with:
+          eas-version: latest
+          token: ${{ secrets.EXPO_TOKEN }}
+
+      - name: Build (workflow_dispatch)
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          eas build --profile ${{ github.event.inputs.profile }} \
+            --platform ${{ github.event.inputs.platform }} \
+            --non-interactive --no-wait
+
+      - name: Build (tag push → production)
+        if: github.event_name == 'push'
+        run: eas build --profile production --platform all --non-interactive --no-wait
+
+      - name: Submit to stores
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.submit == 'true'
+        run: |
+          eas submit --profile production --platform ${{ github.event.inputs.platform }} \
+            --non-interactive --latest

@@ -1,0 +1,57 @@
+{
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "retry": "Réessayer",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "confirm": "Confirmer"
+  },
+  "onboarding": {
+    "title": "Bienvenue sur Recettes du Monde",
+    "subtitle": "Sélectionnez vos préférences alimentaires",
+    "continue": "Continuer",
+    "skip": "Passer"
+  },
+  "auth": {
+    "login": "Se connecter",
+    "signup": "Créer un compte",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "continueWithApple": "Continuer avec Apple",
+    "continueWithGoogle": "Continuer avec Google"
+  },
+  "home": {
+    "recipeOfTheDay": "Recette du jour",
+    "popular": "Recettes populaires"
+  },
+  "search": {
+    "placeholder": "Rechercher par ingrédient...",
+    "noResults": "Aucune recette trouvée"
+  },
+  "recipe": {
+    "ingredients": "Ingrédients",
+    "steps": "Étapes",
+    "nutrition": "Valeurs nutritionnelles",
+    "addToShoppingList": "Ajouter à la liste de courses",
+    "premiumLocked": "Recette premium",
+    "unlockWithAd": "Débloquer avec une pub",
+    "unlockWithPremium": "Passer Premium"
+  },
+  "shoppingList": {
+    "title": "Liste de courses",
+    "empty": "Votre liste de courses est vide",
+    "clearChecked": "Supprimer les articles cochés"
+  },
+  "profile": {
+    "title": "Profil",
+    "settings": "Paramètres",
+    "darkMode": "Mode sombre",
+    "language": "Langue",
+    "removeAds": "Supprimer les publicités",
+    "premium": "Passer Premium",
+    "logout": "Se déconnecter",
+    "deleteAccount": "Supprimer mon compte"
+  }
+}

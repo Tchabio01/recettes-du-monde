@@ -1,0 +1,6 @@
+appId: com.recettesdumonde.app.dev
+---
+- launchApp
+- tapOn: "Profil"
+- assertVisible: "Passer Premium"
+- tapOn: "S'abonner"
